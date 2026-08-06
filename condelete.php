@@ -6,7 +6,7 @@ error_reporting(0);
 if(isset($_GET['REMOVE']));
 {
 
-    $rm=$_GET['REMOVE'];
+    $rm=$_GET['ggg'];
 $query="delete from tblcon where id= '$rm'";
 
 if(mysqli_query($con,$query))

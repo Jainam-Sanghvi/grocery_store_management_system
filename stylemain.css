@@ -1,0 +1,199 @@
+.main-about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("heading-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+
+
+}
+
+.main-about .banner-text
+{
+  
+    color:black;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+  color: #222;
+  font-size: 2rem;
+}
+p
+{
+  font-size: 20px;
+  color:#666;
+}
+
+
+a
+{
+  font-size: 20px;
+  color:#666;
+}
+section{
+  padding: 3rem 9%;
+}
+#box4{
+  background-image: url("about-img.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 60vh;
+ }
+ #box5{
+  
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box6{
+  background-image: url("gallery-img-1.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box7{
+  background-image: url("gallery-img-2.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }#box8{
+  background-image: url("gallery-img-3.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }     
+ #box9{
+  background-image: url("gallery-img-5.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box10{
+  background-image: url("gallery-img-4.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box11{
+  background-image: url("gallery-img-6.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+
+
+ 
+ 
+ .stars{
+  margin-left: 90px;
+  color: yellow;
+  
+}
+
+
+
+
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+
+  .product .box-container .box{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--black);
+    position: relative;
+    padding: 20px;
+    background-color:white;
+    width: 100px;
+  }
+   .product .box-container .box img{
+    height: 250px;
+    background-color: beige;
+  }
+  .name
+{
+ 
+    font-size: 1.7rem;
+    color: var(--black);
+  }
+.price
+{
+ 
+  /* font-size: 1.4rem;
+  color: var(--black); */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 25px;
+}
+  
+.footer {
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+ 
+  gap:1.2rem;
+}
+.footer .box-container .box h4 {
+  font-size: 1.2rem;
+  color: #222;
+  padding: 1rem 11rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1rem;
+  color: #666;
+  padding-bottom: .2rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem 11rem;
+  display: block;
+}
+.footer .box-container .box a:hover {
+  color: #bac34e;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 6rem;
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: #bac34e;
+}
+
+.credit {
+  text-align: center;
+  background: var(--orange);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+
+

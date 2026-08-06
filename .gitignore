@@ -1,0 +1,8 @@
+#database configuration
+/conn.php
+
+#database backup files
+*.sql
+
+#uploadfiles
+/images

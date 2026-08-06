@@ -1,0 +1,286 @@
+
+
+.main-about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("heading-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+
+
+}
+
+.main-about .banner-text
+{
+  
+    color:black;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+  color: #222;
+  font-size: 2rem;
+}
+p
+{
+  font-size: 20px;
+  color:#666;
+}
+
+
+a
+{
+  font-size: 20px;
+  color:#666;
+}
+section{
+  padding: 3rem 9%;
+}
+#box4{
+  background-image: url("about-img.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 60vh;
+ }
+ #box5{
+  
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box6{
+  background-image: url("gallery-img-1.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box7{
+  background-image: url("gallery-img-2.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }#box8{
+  background-image: url("gallery-img-3.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }     
+ #box9{
+  background-image: url("gallery-img-5.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box10{
+  background-image: url("gallery-img-4.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+ #box11{
+  background-image: url("gallery-img-6.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+  height: 35vh;
+ }
+
+
+ 
+ 
+ .stars{
+  margin-left: 90px;
+  color: yellow;
+  
+}
+
+
+
+
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+
+  .product .box-container .box{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--black);
+    position: relative;
+    padding: 20px;
+    background-color:white;
+    width: 290px;
+  }
+   .product .box-container .box img{
+    height: 250px;
+    background-color: beige;
+  }
+  .name
+{
+ 
+    font-size: 23px;
+    color: black;
+    padding: 5px 0;
+  }
+.price
+{
+ 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 25px;
+}
+.product .box-container .box input[type="number"]{
+    margin:10px 0;
+    width:100%;
+    border: var(--border);
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--black);
+    padding: 12px 14px ;
+  }
+
+
+  .shopping-cart1{
+    padding: 20px 0;
+  }
+  .shopping-cart1 table{
+    width: 100%;
+    text-align: center;
+    border: var(--border);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+  }
+  
+  .shopping-cart1 table thead{
+    background-color: black;
+  }
+  
+  .shopping-cart1 table th{
+    padding: 10px;
+    color:white;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .shopping-cart1 table .table-bottom{
+    background-color:lightgoldenrodyellow;
+  
+  }
+   .shopping-cart1 table tr td{
+    padding: 10px;
+    font-size: 20px;
+    color:black;
+  }
+   .shopping-cart1 table tr td:nth-child(1){
+    padding: 0;
+  }
+   .shopping-cart1 table tr td input[type="number"]{
+    width: 80px;
+    border: var(--border);
+    padding: 12px 14px;
+    font-size: 20px;
+    color: black;
+  }
+   .shopping-cart1 .cart-btn{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .shopping-cart1 .disabled{
+    pointer-events: none;
+    background-color: var(--red);
+    opacity: .5;
+    user-select: none;
+  }
+  
+.footer {
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+ 
+  gap:1.2rem;
+}
+.footer .box-container .box h4 {
+  font-size: 1.2rem;
+  color: #222;
+  padding: 1rem 11rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1rem;
+  color: #666;
+  padding-bottom: .2rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem 11rem;
+  display: block;
+}
+.footer .box-container .box a:hover {
+  color: #bac34e;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 6rem;
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: #bac34e;
+}
+
+.credit {
+  text-align: center;
+  background: var(--orange);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+
+.message{
+    position: sticky;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 15px 10px;
+      background-color: white;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: var(--box-shadow);
+      color: var(--black);
+      font-size: 25px;
+      text-transform: capitalize;
+      cursor: pointer;
+  }
+  
+.heading1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    color:#222;
+  
+  }

@@ -1,0 +1,126 @@
+<?php
+
+require('conn.php');
+
+error_reporting(0);
+
+
+
+
+
+
+session_start();
+
+if(isset($_POST['login']))
+
+{
+
+  $uname=mysqli_real_escape_string($con,$_POST['uname']);
+
+  $pass=md5($_POST['pass']);
+  
+  $select="select * from tblreg where uname='$uname' and pass='$pass'";
+  $result=mysqli_query($con,$select);
+  if(mysqli_num_rows($result)>0)
+  {
+    $_SESSION['uname']=$uname;
+    $_SESSION['pass']=$pass;
+    header("Location:home.php");
+  }
+  else
+  {
+    $error[]="incorrect email or password";
+  }
+}
+
+
+
+?> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <style>
+      body{
+        background-image: url("login12.jpg");
+        background-size: 100%;
+      
+      }
+      .error
+      {
+        color:red;
+      }
+      #myform{
+        background-image: url("login1.webp");
+        background-size: 100%;
+        background-blend-mode: darken;
+        color: snow;
+      }
+    </style>
+    <script>
+      function validation()
+      {
+        
+        var pass=document.getElementById("pass").value;
+        
+        if(pass == "")
+        {
+          document.getElementById("upass").innerHTML=" ** please fill the password feild";
+          return false;
+        }
+        if((pass.length<=2)||(pass.length > 20))
+        {
+          document.getElementById("upass").innerHTML=" ** password length must be between 2 and 20";
+          return false;
+        }
+      }
+
+      
+    </script>
+</head>
+<body>
+    <div id="login">
+      <form action=""  method="POST" id="myform" onsubmit="return validation()" style="margin: 8% 26%;padding: 5% 5%;border: 2px solid black;">
+        <h2 style="text-align: center;">LOGIN NOW</h2>
+        <?php
+        
+        if(isset($error))
+        {
+
+          foreach($error as $error)
+          {
+            echo '<h3><span class="error">'.$error.'</span></h3>';
+          }
+        }
+        ?>
+        <div class="form-group">
+            <label id="name1" class="control-label">ENTER YOUR USERNAME</label>
+            <input type="email" id="name" name="uname" placeholder="enter your email" class="form-control" required >
+            <span id="uname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label id="pass1" class="control-label">ENTER YOUR PASSWORD</label>
+            <input type="password" id="pass" name="pass" placeholder="enter your password" class="form-control">
+            <span id="upass" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" id="btn1" class="btn btn-primary btn-block btn-lg" value="LOGIN NOW" name="login">
+        </div>
+        <div>
+            <p style="font-size: 20px;text-align: center;">you don't have any account ? <a href="register.php">register now!</a> </p>
+        </div>
+    </form>
+
+    </div>
+
+    
+</body>
+</html>
